@@ -1,0 +1,8 @@
+SELECT Host, User from mysql.user;
+CREATE USER 'prnv'@'localhost' identified by '123';
+SELECT Host, User from mysql.user;
+Show databases;
+Create database mydatabase;
+Use mydatabase;
+grant all on mydatabase.* to 'prnv'@'localhost';
+flush privileges;   
